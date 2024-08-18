@@ -10,6 +10,14 @@ import { ProductsService } from '../services/products.service';
 })
 export class HomeComponent {
   constructor(
-    private productsService: ProductsService 
+    private productsService: ProductsService
   ) { }
+
+  ngOnInit() {
+    this.productsService.getProducts('http://localhost:3000/clothes', { page: 0, perPage: 5 })
+      .subscribe(products => {
+        console.log(products);
+      });
+
+  }
 }
