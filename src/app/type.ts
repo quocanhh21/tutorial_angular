@@ -17,8 +17,8 @@ export interface Options{
     } | boolean;
 }
 
-export interface Product{
-    item: Product[];
+export interface Products{
+    items: Product[];
     total: number;
     page: number;
     perPage: number;
