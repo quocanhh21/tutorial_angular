@@ -15,4 +15,16 @@ export class ProductsService {
   getProducts = (url: string, params: PaginationParams): Observable<any> => {
     return this.apiService.get(url, {params,responseType: 'json'});
   }
+
+  addProducts = (url: string, body: any): Observable<any> => {
+    return this.apiService.post(url, body, {});
+  }
+
+  updateProducts = (url: string, body: any): Observable<any> => {
+    return this.apiService.put(url, body, {});
+  }
+
+  deleteProducts = (url: string): Observable<any> => {
+    return this.apiService.delete(url, {});
+  }
 }
