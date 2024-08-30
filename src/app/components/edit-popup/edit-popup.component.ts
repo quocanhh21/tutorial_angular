@@ -5,11 +5,12 @@ import { Product } from '../../type';
 import { FormsModule } from '@angular/forms';
 import { RatingModule } from 'primeng/rating';
 import { ButtonModule } from 'primeng/button';
+import { InputTextModule } from 'primeng/inputtext';
 
 @Component({
   selector: 'app-edit-popup',
   standalone: true,
-  imports: [DialogModule, CommonModule, FormsModule,RatingModule,ButtonModule],
+  imports: [DialogModule, CommonModule, FormsModule,RatingModule,ButtonModule,InputTextModule],
   templateUrl: './edit-popup.component.html',
   styleUrl: './edit-popup.component.scss'
 })
