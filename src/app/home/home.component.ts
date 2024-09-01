@@ -47,7 +47,7 @@ export class HomeComponent {
   selectedProduct: Product = {
     id:0,
     name: '',
-    price: 0,
+    price: '',
     image: '',
     rating: 0,
   };
